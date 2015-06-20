@@ -94,7 +94,7 @@ if (!~process.argv.indexOf('-n')) {
   });
 }
 
-server.listen(80);
+server.listen(process.env.PORT || 3000);
 console.log("****Server is runnig on http://localhost:9000");
 /**
  * Sockets
