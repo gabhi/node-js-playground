@@ -83,18 +83,18 @@ app.use(express.static(__dirname));
 if (!~process.argv.indexOf('-n')) {
   server.on('connection', function(socket) {
     var address = socket.remoteAddress;
-    if (address !== '127.0.0.1' && address !== '::1') {
-      try {
-        socket.destroy();
-      } catch (e) {
-        ;
-      }
-      console.log('Attempted connection from %s. Refused.', address);
-    }
+//    if (address !== '127.0.0.1' && address !== '::1') {
+  //    try {
+    //    socket.destroy();
+     // } catch (e) {
+       // ;
+     // }
+     // console.log('Attempted connection from %s. Refused.', address);
+    //}
   });
 }
 
-server.listen(9000);
+server.listen(80);
 console.log("Server is runnig on http://localhost:9000");
 /**
  * Sockets
