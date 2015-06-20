@@ -95,7 +95,7 @@ if (!~process.argv.indexOf('-n')) {
 }
 
 server.listen(80);
-console.log("Server is runnig on http://localhost:9000");
+console.log("****Server is runnig on http://localhost:9000");
 /**
  * Sockets
  */
